@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:rgb(227, 238, 248);
+    }
+
+    .main {
+      width: 90vw;
+      max-width: 600px;
+      height: 92%;
+      background-color: rgb(240, 247, 247);
+      border-radius: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      
+      /* margin-bottom: 50px; */
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 10vw;
+      margin: 0;
+      margin-bottom: 1rem;
+      padding: 0 ;
+      
+    }
+
+    .contain {
+      width: 100%;
+      height: 100%;
+      /* background-color: rgb(192, 122, 122); */
+      border-radius: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    swiper-container {
+      width: 90%;
+      height: 70vh;
+      max-height: 550px;
+      border-radius: 18px;
+    }
+
+    swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    span{
+      font-size: 3vw;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      bottom: 20px;
+      color: rgb(184, 184, 176);
+    }
+    hr{
+      padding: 0;
+      margin: 0;
+    }
+    .emoji{
+      width: 60%;
+      height: 60%;
+      object-fit: contain;
+      position: relative;
+      /* bottom: 100px; */
+
+
+    }
+    .bg{
+      background-color: beige;
+      flex-direction: column;
+      
+    }
+    .msg{
+      color: rgb(129, 130, 131);
+    }
+    .emo{
+      /* width: 60%;
+      height: 60%; */
+      /* object-fit: fill; */
+      background-color:rgb(233, 186, 186);
+      position: relative;
+      bottom: -30px;
+      border-top-left-radius: 7rem;
+      border-top-right-radius: rem;
+    }
+    .bt{
+      background-color:rgb(245, 235, 235) ;
+    }
+    .bday{
+      color: rgb(199, 199, 160);
+      font-size: 30px;
+    }
+    .all{
+      object-fit: contain;
+      width: 80%;
+      position: relative;
+      /* top: -0px; */
+     
+     
+      
+    }
+    .next{
+      flex-direction: column;
+      
+      
+    }
+    .pickup{
+      padding:20px;
+      margin: 0;
+      position: relative;
+      /* bottom: 80px; */
+      font-size: 13px;
+      color: rgb(243, 243, 228);
+      background-color:rgb(235, 187, 187);
+      border-radius: 5px;
+      height: 250px;
+font-family: monospace;
+border-top-right-radius: 2rem;
+/* border-bottom-left-radius: 5rem; */
+border-top-left-radius: 2rem;
+padding-top: 50px;
+      
+
+    }
+    .new{
+      
+    }
+    video{
+      width: 100%;
+      height:100%;
+      object-fit: cover;
+    }
+    .vid{
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="text">
+      <h1>Happy Birthday <br><span>dear varuniii</span><hr></h1>
+    </div>
+    <div class="contain">
+      <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+        <swiper-slide class="bg bt"> <p class="bday">Happy Birthday</p><span>🎉---------miss goddess---------🎉</span><img src="./gifs/kartik-aaryan-dance.gif" alt=""  class="emo"></swiper-slide>
+        <swiper-slide><img src="./images/5(1).jpg" alt=""></swiper-slide>
+        <swiper-slide><img src="./images/3(1).jpg" alt=""></swiper-slide>
+        <!-- <swiper-slide><img src="./images/1.jpg" alt=""></swiper-slide> -->
+        <swiper-slide style="background-color: antiquewhite;" class="next"><img src="./gifs/happy-birthday-cake.gif" alt="" class="all"> <p class="pickup">As you celebrate another year of life, I hope your heart is filled with warmth, your day is filled with smiles, and your year ahead is filled with endless possibilities. Happy birthday...Varuni</p></swiper-slide>
+        <swiper-slide><img src="./images/4(1).jpg" alt=""></swiper-slide>
+        <swiper-slide><img src="./gifs/Hey (1).gif" alt="" class="new"></swiper-slide>
+        <swiper-slide><img src="./gifs/Hey (2).gif" alt=""></swiper-slide>
+        <swiper-slide><img src="./images/7(1).jpg" alt=""></swiper-slide>
+        <!-- <swiper-slide><video src="./images/v2.mp4" autoplay loop muted></video></swiper-slide> -->
+        <swiper-slide class="vid"><video src="./images/v5.mp4" autoplay loop ></video></swiper-slide>
+        <swiper-slide><img src="./images/7(1).jpg" alt=""></swiper-slide>
+        <swiper-slide><img src="./images/7(1).jpg" alt=""></swiper-slide>
+        <swiper-slide class="bg"><img src="./images/emj.gif" alt="" class="emoji"><span>wish you a very</span> <h1 class="msg">Happy Birthday</h1></swiper-slide>
+      </swiper-container>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>
